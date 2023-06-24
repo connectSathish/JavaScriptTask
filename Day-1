@@ -1,0 +1,43 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2?
+
+   Launching of the HTTP/2 was an attempt to overcome the limitations of HTTP/1.1anc make it a more effient web protocol,
+So the major difference in these two are mainly the additons or ipgrade applied in HTTP/2.
+
+HTTP/1.1
+    HTTP protocol was developed in 1989 as the common launguage that enbles client and server machine's insstraction 
+
+1.The client (browser) has to send a request to the server using the method(GET/POST).
+2.Server repomds with the requested resoure ,for example image ,alondside the status of what it did to the client-request
+
+Keep in mind that this is not a one-time processSuch requests and responses needs to be tranfered betwwen both these machines unit 
+the client recieves all the resoures essentials to load a web page on the end-users screen 
+
+this request-response exchange can be regrarded as an IP stack being handled by tranfer layer and networking layers before finally reaching
+to the application layer,Now let see how HTTP/2 handles the samje scinario
+
+HTTP/2
+
+HTTP/2 was released at Google as the significant improvement of its predecessor. It was initially modeled after the SPDY protocol and
+went through significant changes to include features like multiplexing, header compression, and stream prioritization to minimize page
+load latency. After its release, Google announced that it would not provide support for SPDY in favor of HTTP/2.
+
+The major feature that differentiates HTTP/2 from HTTP/1.1 is the binary framing layer. 
+Unlike HTTP/1.1, HTTP/2 uses a binary framing layer. This layer encapsulates messages – converted to its binary 
+equivalent – while making sure that its HTTP semantics (method details, header information, etc.) remain untamed.
+This feature of HTTP/2 enables gRPC to use lesser resources.
+
+
+
+2.Write a blog about objects and its internal representation in Javascript
+
+Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript.
+These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol)
+in the sense that while these primitive data-types all store a single value each (depending on their types).
+
+Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value.
+That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+
+Loosely speaking, objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, 
+in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively,
+in the context of an object.
