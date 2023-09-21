@@ -1,0 +1,89 @@
+Compare two JSON 
+
+let Obj1 ={ name:"person1", age:5};
+let Obj2 ={ age:5, name:"person1"};
+
+JSON.stringify(Obj1) === JSON.stringify(Obj2)
+// false
+    
+_.isEqual(Obj1, Obj2)
+// true
+
+
+Display all the country flag 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <script src="script.js"></script>  -->
+
+   <script>
+        
+      let xhr = new XMLHttpRequest();
+      
+      xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+        xhr.onload = function (){
+            // console.log(this.responseText);
+
+            let responseObj = JSON.parse(this.responseText);
+            
+            // console.log(responseText[0]);
+
+            for (let country of responseObj){
+                console.log(country.falg);
+            }
+        }
+
+      xhr.send();
+
+   </script>
+</body>
+</html>
+
+
+Print all country name,region,sub-region and population
+-------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <script src="script.js"></script>  -->
+
+   <script>
+        
+      let xhr = new XMLHttpRequest();
+      
+      xhr.open("GET", "https://restcountries.com/v3.1/all");
+        xhr.onload = function (){
+            // console.log(this.responseText);
+
+            let responseObj = JSON.parse(xhr.response);
+            
+            // console.log(responseText[0]);
+
+            // for (let country of responseObj){
+            //     console.log(country.falg);
+            // }
+
+            for(var i=0; i<xhr.length; i++){
+                console.log(xhr[i].name.country,xhr[i].region,xhr[i].sub-region,xhr[i].population);
+            }
+        }
+
+      xhr.send();
+
+   </script>
+</body>
+</html>
