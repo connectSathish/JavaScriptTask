@@ -1,0 +1,58 @@
+
+
+1.
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert("I’m JavaScript!");
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+
+Syntex error --> proper quate where not defind
+
+2.
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+
+import file was mismatch
+
+
+3.
+explain.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+alert("I'm JavaScript!");//This is the firstline that is executed
+alert('Hello') // this line is not having semicolon  // This is the secondline that is executed
+alert(`Wor
+ ld`)  // thrid line is executed
+alert(3 +
+1
++ 2); // this is multiple line code and its working----->//yes output is 6
+
+
+4.
+let admin=9;
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+" "+lname;
+alert( admin ); // "Guvi geek"//working
+
+5.
