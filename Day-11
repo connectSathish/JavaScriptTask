@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group table
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    
+
+    .form-group .radio-button label {
+      display: inline-block;
+      cursor: pointer;
+      color: #ccc;
+      font-size: 25px;
+    }
+
+    .form-group .radio-button input[type="radio"] {
+      display: none;
+    }
+
+    .form-group .radio-button input[type="radio"]:checked ~ label {
+      color: #ffaa00;
+    }
+
+    .form-group .submit-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 360px) {
+      .container {
+        max-width: 90%;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .container {
+        max-width: 90%;
+      }
+    }
+    @media screen and (max-width: 1080px) {
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Feedback Form</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label>Your Experience *</label>
+      <div class="radio-button">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>How satisfied are you with *</label>
+      <div class="rating-stars">
+        <table>
+            <tr>
+                <th></th>
+                <th>Very Unsatisfied</th>
+                <th>Unsatisfied</th>
+                <th>Neutral</th>
+                <th>Satisfied</th>
+                <th>Very-satisfied</th>
+            </tr>
+            <tr>
+                <td>Purchuse</td>
+                <td> <input type="radio" id="unsatisfied" name="satisfaction" value="Very Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="unsatisfied" name="satisfaction" value="Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="neutral" name="satisfaction" value="Neutral"><label for="neutral"></label></td>
+                <td> <input type="radio" id="satisfied" name="satisfaction" value="Satisfied"><label for="satisfied"></label></td>
+                <td> <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied"><label for="very-satisfied"></label></td>
+            </tr>
+            <tr>
+                <td>Service</td>
+                <td> <input type="radio" id="unsatisfied" name="satisfaction" value="Very Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="unsatisfied" name="satisfaction" value="Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="neutral" name="satisfaction" value="Neutral"><label for="neutral"></label></td>
+                <td> <input type="radio" id="satisfied" name="satisfaction" value="Satisfied"><label for="satisfied"></label></td>
+                <td> <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied"><label for="very-satisfied"></label></td>
+            </tr>
+            <tr>
+                <td>Company Overall</td>
+                <td> <input type="radio" id="unsatisfied" name="satisfaction" value="Very Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="unsatisfied" name="satisfaction" value="Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="neutral" name="satisfaction" value="Neutral"><label for="neutral"></label></td>
+                <td> <input type="radio" id="satisfied" name="satisfaction" value="Satisfied"><label for="satisfied"></label></td>
+                <td> <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied"><label for="very-satisfied"></label></td>
+            </tr>
+        </table>
+       
+        
+        
+       
+       
+      </div>
+    </div>
+    <div class="form-group">
+      <label>How likely are you to *</label>
+      <div class="rating-stars">
+        <table>
+            <tr>
+                <th></th>
+                <th>Very Unsatisfied</th>
+                <th>Unsatisfied</th>
+                <th>Neutral</th>
+                <th>Satisfied</th>
+                <th>Very-satisfied</th>
+            </tr>
+            <tr>
+                <td>Buy from us again</td>
+                <td> <input type="radio" id="unsatisfied" name="satisfaction" value="Very Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="unsatisfied" name="satisfaction" value="Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="neutral" name="satisfaction" value="Neutral"><label for="neutral"></label></td>
+                <td> <input type="radio" id="satisfied" name="satisfaction" value="Satisfied"><label for="satisfied"></label></td>
+                <td> <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied"><label for="very-satisfied"></label></td>
+            </tr>
+            <tr>
+                <td>Recommend our Product to others</td>
+                <td> <input type="radio" id="unsatisfied" name="satisfaction" value="Very Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="unsatisfied" name="satisfaction" value="Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="neutral" name="satisfaction" value="Neutral"><label for="neutral"></label></td>
+                <td> <input type="radio" id="satisfied" name="satisfaction" value="Satisfied"><label for="satisfied"></label></td>
+                <td> <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied"><label for="very-satisfied"></label></td>
+            </tr>
+            <tr>
+                <td>Recommend our company to others</td>
+                <td> <input type="radio" id="unsatisfied" name="satisfaction" value="Very Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="unsatisfied" name="satisfaction" value="Unsatisfied"><label for="unsatisfied"></label></td>
+                <td><input type="radio" id="neutral" name="satisfaction" value="Neutral"><label for="neutral"></label></td>
+                <td> <input type="radio" id="satisfied" name="satisfaction" value="Satisfied"><label for="satisfied"></label></td>
+                <td> <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied"><label for="very-satisfied"></label></td>
+            </tr>
+        </table>
+       
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="comments">Additional comments or suggestions</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" class="submit-btn" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  .image-upload {
+    width: 150px;
+    height: 150px;
+    border: 1px dashed #ccc;
+    border-radius: 10px; /* Border radius for image upload */
+    margin-right: 20px;
+    text-align: center;
+    line-height: 150px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  .image-upload label {
+    cursor: pointer;
+  }
+  .input-container {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Border radius for input fields */
+    padding: 20px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Border radius for input fields */
+  }
+  input[type="submit"],
+  input[type="button"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover,
+  input[type="button"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <center><h2>Event 1</h2>
+  <p>Number of available seats: <span id="available-seats">23</span></p></center>
+  <div class="flex-container input-container">
+    <div class="image-upload">
+      <input type="file" id="image-upload" accept="image/*">
+      <label for="image-upload">Upload Image</label>
+    </div>
+    <div class="">
+      <form id="event-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone No.:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="seats">Number of seats:</label>
+        <input type="number" id="seats" name="seats" min="1" max="23" value="1" required><br>
+        <label for="attendee2">Name of Attendee 2:</label>
+        <input type="text" id="attendee2" name="attendee2"><br>
+        <input type="submit" value="Submit">
+        <input type="button" value="Cancel">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
